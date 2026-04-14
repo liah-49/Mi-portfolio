@@ -1,0 +1,77 @@
+ *{
+    margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/*Maquetación del cuerpo*/
+
+body{
+  background-color: #ffffff;
+  font-family: 'Arial';
+  color: #000;
+  overflow-x: hidden;
+}
+/*Maquetación de los titulos principales*/
+header {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+h1 {
+    font-family: 'Narnia', serif;
+    font-size: 16rem;
+    font-weight: 400;
+    line-height: 0.88;
+    letter-spacing: 0.02em;
+    color: #000;
+    padding-left: 3rem
+}
+h2{
+    font-family: 'Narnia';
+  color: #000;
+  letter-spacing:10%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:1rem;
+  border-top: 2px solid #000;
+   margin-top: 2rem
+
+}
+header > div > img{
+  /*Maquetación menú de navegación*/
+  position:absolute;
+  width: 120px;
+  bottom: 10px;
+  right: ;
+}
+  
+    
+
+ #menu > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 4rem;
+    align-items: center ;
+    padding: 0 2rem;
+    gap: 120px;
+    font-size:  22px;
+   
+
+     
+ }
+
+#menu > ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial;
+      color: #000;
+}    
+
+
