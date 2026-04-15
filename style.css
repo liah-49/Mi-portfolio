@@ -67,6 +67,14 @@ h2 {
     letter-spacing: 0.1em;
     font-size: 4rem;
     padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+h3{
+    font-family: Arial, san serif;
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-top: 4rem;
 }
 
 /*  Máscara */
@@ -79,14 +87,14 @@ header > div > img {
     width: 70%;
 }
 
-/* ── FIGURE ── */
+/* FIGURE */
 figure {
     flex: 50%;
     margin-left: 2rem;
     margin-top: -1rem;
 }
 
-figure img {
+figure > img {
     width: 80%;
     vertical-align:bottom;
 }
@@ -97,5 +105,35 @@ section  {
     border-top: 2px solid #000;
 }
 /*Maquetación sobre mi */
+#sobre mi  .contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}   
+#sobre mi .contenido{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.imagen > img{
+    width: 100%;
+    vertical-align: middle;
+}
 
+/* ICONOS */
+.iconos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
+.iconos > figure{
+    width: 60px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.iconos > img{
+    width: 100%;
+}
