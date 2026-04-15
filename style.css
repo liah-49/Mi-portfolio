@@ -107,7 +107,7 @@ section  {
 /*Maquetación sobre mi */
 #sobremi > div {
     display: flex;
-    align-items: flex-start;
+    
     gap: 2rem;
   
     border-bottom: 2px solid #000;
@@ -117,45 +117,117 @@ section  {
 }
 #sobremi > div > div {
     flex: 50%;
+    
 }
+
+#sobremi > div > div > h2 {
+font-size: 5vw;
+}
+
 #sobremi > div > div p {
     font-size: 0.95rem;
     line-height: 1.6;
     
 }
-#sobremi > div > div h3 {
-    font-size: 2rem;
+#sobremi > div > h2 {
+    font-size: 2vw;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
+#sobremi > div > div:first-child {
+  width: 60%;
+}
+
 .cuadro {
     flex: 45%;
 }
 .cuadro img {
     width: 100%;
     vertical-align: bottom;
-    margin-top: -150px;
+    margin-top: -1vw;
 }
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
 .logo {
-    flex: 0 0 80px;
-    margin-top: -150px;
-    margin-left: 20px;
+  width: 70px;
 }
+
 .logo img {
-    width: 80%;
-    vertical-align: middle;
+  width: 100%;
+  vertical-align: middle;
 }
+
+
+
 /*Maquetación proyectos */
+
+#proyectos {
+  padding: 3em;
+}
+#proyectos > div {
+align-items: center;
+}
+
+#proyectos > .imagenes {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+text-align: center;
+}
 
 /*Maquetación contacto*/
 #contacto > div {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #000;
+    
 }
 #contacto > div > div{
     position: relative;
     margin-top: -3rem;
     margin-right: 3rem; 
 }
+#menuabajo {
+    border-top: 2px solid #000;
+    margin-top: 1rem;
 
+}
+#menuabajo ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 18rem;
+    height: 4rem;
+    font-size: 22px;
+}
+#menuabajo ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  padding: 16px;
+    border-bottom: 2px solid #000;
+    margin-bottom: 2rem;
+ 
+}
+footer > div > figcaption > a {
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    color: #000;
+     font-size: 22px;
+}
+footer > div > figcaption {
+width: 400%;
+}
