@@ -70,7 +70,7 @@ h2 {
     margin-bottom: 2rem;
 }
 h3{
-    font-family: Arial, san serif;
+    font-family: Arial, sans-serif;
     color: #000;
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -80,7 +80,6 @@ h3{
 /*  Máscara */
 header > div > img {
     position: absolute;
-    width: 120px;
     bottom: 0px;
     right: -180px;
     transform:scaleX(-1);
@@ -105,11 +104,35 @@ section  {
     border-top: 2px solid #000;
 }
 /*Maquetación sobre mi */
-#sobre mi > div {
-  display: flex;
-    align-items: center;
+#sobremi > div {
+    display: flex;
+    align-items: flex-start;
     gap: 2rem;
-}   
-#sobre mi > div * {
-      flex: 1;
+    flex-wrap: wrap;
+}
+#sobremi > div > div {
+    flex: 50%;
+}
+#sobremi > div > div p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+#sobremi > div > div h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.cuadro {
+    flex: 45%;
+}
+.cuadro img {
+    width: 100%;
+    vertical-align: middle;
+}
+.logo {
+    flex: 0 0 70px;
+}
+.logo img {
+    width: 100%;
+    vertical-align: middle;
 }
