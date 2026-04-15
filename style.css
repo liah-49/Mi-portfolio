@@ -1,24 +1,54 @@
- *{
+* {
     margin: 0;
-  padding:0;
-  box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-/*Maquetación del cuerpo*/
-
-body{
-  background-color: #ffffff;
-  font-family: 'Arial';
-  color: #000;
-  overflow-x: hidden;
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    color: #000;
+    overflow-x: hidden;
 }
-/*Maquetación de los titulos principales*/
+
+/* menu navegacion*/
+#menu {
+    border-top: 2px solid #000;
+    margin-top: 2rem;
+
+}
+
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 18rem;
+    height: 4rem;
+    font-size: 22px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+/* header*/
 header {
     display: flex;
     align-items: center;
-    
+    border-bottom: 2px solid #000;
 }
 
+header > div {
+    position: relative;
+    margin-top: -3rem;
+    margin-right: 3rem; 
+}
 
 h1 {
     font-family: 'Narnia', serif;
@@ -27,51 +57,45 @@ h1 {
     line-height: 0.88;
     letter-spacing: 0.02em;
     color: #000;
-    padding-left: 3rem
-}
-h2{
-    font-family: 'Narnia';
-  color: #000;
-  letter-spacing:10%;
-}
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding:1rem;
-  border-top: 2px solid #000;
-   margin-top: 2rem
-
-}
-header > div > img{
-  /*Maquetación menú de navegación*/
-  position:absolute;
-  width: 120px;
-  bottom: 10px;
-  right: ;
-}
-  
+    padding-left: 3rem;
     
+}
 
- #menu > ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    height: 4rem;
-    align-items: center ;
-    padding: 0 2rem;
-    gap: 120px;
-    font-size:  22px;
-   
+h2 {
+    font-family: 'Narnia', serif;
+    color: #000;
+    letter-spacing: 0.1em;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
 
-     
- }
+/*  Máscara */
+header > div > img {
+    position: absolute;
+    width: 120px;
+    bottom: 0px;
+    right: -180px;
+    transform:scaleX(-1);
+    width: 70%;
+}
 
-#menu > ul > li > a {
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Arial;
-      color: #000;
-}    
+/* ── FIGURE ── */
+figure {
+    flex: 50%;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+
+figure img {
+    width: 80%;
+    vertical-align:bottom;
+}
+/*para poner el borde negro*/
+section  {
+    margin-top: 40px;
+    padding: 29px;
+    border-top: 2px solid #000;
+}
+/*Maquetación sobre mi */
 
 
