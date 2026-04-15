@@ -105,35 +105,11 @@ section  {
     border-top: 2px solid #000;
 }
 /*Maquetación sobre mi */
-#sobre mi  .contenedor {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+#sobre mi > div {
+  display: flex;
+    align-items: center;
+    gap: 2rem;
 }   
-#sobre mi .contenido{
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.imagen > img{
-    width: 100%;
-    vertical-align: middle;
-}
-
-/* ICONOS */
-.iconos{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.iconos > figure{
-    width: 60px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-}
-
-.iconos > img{
-    width: 100%;
+#sobre mi > div * {
+      flex: 1;
 }
