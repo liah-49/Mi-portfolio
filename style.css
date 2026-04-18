@@ -221,7 +221,7 @@ font-size: 5vw;
     font-family: Arial, sans-serif;
     color: #000;
 }
-footer > div {
+footer > ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -229,7 +229,7 @@ footer > div {
   padding: 16px;
  
 }
-footer > div > figcaption > a {
+footer > ul > li > a {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -242,6 +242,6 @@ footer > div > figcaption > a {
     
      
 }
-footer > div > figcaption {
+footer > div > li {
 width: 100%;
 }
