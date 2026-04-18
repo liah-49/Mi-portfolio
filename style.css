@@ -26,7 +26,8 @@ body {
     align-items: center;
     padding: 0 2rem;
     height: 4rem;
-    font-size: 22px;
+    font-size: clamp(12px, 4vw, 22px);
+
 }
 
 #menu ul li a {
@@ -201,7 +202,7 @@ font-size: 5vw;
 }
 #contacto > div > div{
     position: relative;
-    margin-top: -3rem;
+    margin-top: 3rem;
     margin-right: 3rem; 
 }
 
@@ -211,7 +212,7 @@ font-size: 5vw;
     list-style: none;
     align-items: center;
     padding: 0 2rem;
-    gap: 18rem;
+ gap: clamp(2rem, 8vw, 18rem);
     height: 4rem;
     font-size: 22px;
 }
@@ -244,4 +245,41 @@ footer > ul > li > a {
 }
 footer > div > li {
 width: 100%;
+}
+#menuabajo {
+  transition: all 0.4s ease;
+}
+/*responsive seccion portfolio */
+@media screen and (max-width: 773px) {
+    .imagenes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2.5rem;
+}
+.marco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.marco p {
+   font-family: 'Narnia', serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: center;
+}
+
+.marco > figure:hover {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.marco > figure:hover {
+    transform: scale(1.1);
+    filter:blur(2px) saturate(150%);
+    transition:  0.5s;
+}
+
 }
