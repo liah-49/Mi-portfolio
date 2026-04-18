@@ -63,13 +63,14 @@ h1 {
 h2 {
     font-family: 'Narnia', serif;
     color: #000;
+     font-weight: 400;
     letter-spacing: 0.1em;
     font-size: 4rem;
     padding-top: 2rem;
     margin-bottom: 2rem;
 }
 h3{
-    font-family: Arial, sans-serif;
+    font-family: 'Narnia', serif;
     color: #000;
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -145,6 +146,15 @@ font-size: 5vw;
   max-width: 100px;
   
 }
+.logos > figure:hover {
+ border-radius: 10px;
+    overflow: hidden;
+}
+.logos > figure:hover {
+    transform: scale(1.1);
+    filter:blur(2px) saturate(150%);
+    transition:  0.5s;
+}
 
 /*Maquetación proyectos */
 .tituloproyectos {
@@ -166,13 +176,22 @@ font-size: 5vw;
 .marco p {
    font-family: 'Narnia', serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
   text-align: center;
 }
 
+.marco > figure:hover {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.marco > figure:hover {
+    transform: scale(1.1);
+    filter:blur(2px) saturate(150%);
+    transition:  0.5s;
+}
 
 /*Maquetación contacto*/
 #contacto > div {
@@ -218,7 +237,9 @@ footer > div > figcaption > a {
     font-weight: normal;
     font-family: Arial, sans-serif;
     color: #000;
+
     font-size: 22px;
+    
      
 }
 footer > div > figcaption {
