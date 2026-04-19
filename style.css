@@ -102,6 +102,20 @@ section  {
     border-bottom: 2px solid #000;
 }
 /*Maquetación sobre mi */
+@media screen and (max-width: 768px) {
+  #sobremi > div {
+    flex-direction: column;
+  }
+
+  .cuadro {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #sobremi > div > div > h2 {
+    font-size: 10vw;
+  }
+
 #sobremi > div {
     display: flex;
     align-items: flex-start;
@@ -156,7 +170,7 @@ font-size: 5vw;
     filter:blur(2px) saturate(150%);
     transition:  0.5s;
 }
-
+}
 /*Maquetación proyectos */
 .tituloproyectos {
     display: flex;
